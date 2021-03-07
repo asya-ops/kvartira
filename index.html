@@ -1,0 +1,190 @@
+<html>
+
+	<head>
+		<!--Имя страницы-->
+		<title>Квартира на сутки Минск</title>
+		<link href="style.css" rel="stylesheet"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--анимация плавного перехода-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			 $(document).ready(function(){
+				$("#menu").on("click","a", function (event) {
+					event.preventDefault();
+					var id  = $(this).attr('href'),
+						top = $(id).offset().top;
+					$('body,html').animate({scrollTop: top}, 1000);
+				});
+			});
+		</script>
+	</head>
+	
+	<!--Начало страницы-->
+	<body>
+	
+		<!--Шапка сайта-->
+		<div class="header">
+			<div class='title'>
+				<!--Логотип сайта-->
+				<img class="logo" src="logo.jpg" alt="Логотип" width="100" height="100" align="left"/>
+				<!--Название сайта-->
+				<h1 class="name">Квартира на сутки<br/><span class="big"></span></h1>
+			</div>
+			<!--Меню сайта-->
+			<ul id="menu" class="menu">
+				<li><a href="#welcome">Главная</a></li>
+				<li><a href="#we">О нас</a></li>
+				<li><a href="#photo">Фотогалерея</a></li>
+				<li><a href="#contact">Контакты</a></li>
+			</ul>
+		</div>
+		
+		<!--Контент-->
+		<div class="main">
+			<!--Приветствие-->
+			<a id="welcome" class="anchor"></a>
+			<div class="welcome">
+				<!--Панорамный фон-->
+				<img src="panorama.png" width="100%"/>
+				<!--Текст приветствия-->
+				<p>Добро пожаловать на нашу страничку.Здесь вы сможите увидеть наши последние новости, фотогалерею, контакты для связи и многое другое</p>		
+			</div>
+			
+			<!--Полоска-->
+			<div class="line"></div>
+			
+			<!--О нас-->
+			<a id="we" class="anchor"></a>
+			<div>
+				<!--Заголовок-->
+				<h2>О нас</h2>
+				<!--Состав семьи-->
+				<div class="box" style="background: SlateBlue">
+					<h3>Наши цены:</h3>
+					<ul>
+						<li>За сутки-40$ </li>
+						<li>Далее по цене можем договорится и сделать маленькую скидочку)))</li>
+	
+						</div>
+					</ul>
+				<!--Девиз-->
+	
+				<!--Качества семьи-->
+				<div class="box" style="background: SlateBlue">
+					<h3>Наши удобства:</h3>
+					<ul>
+						<li>Расположение</li>
+						<li>Wi-Fi</li>
+						<li>Бытовые приборы </li>
+						
+					</ul>
+				</div>
+				<div class="box" style="background: SlateBlue">
+					<h3>Наши услуги:</h3>
+					<ul>
+						<li>Уборка</li>
+						<li>Организование такси</li>
+						<li>Организование мероприятий</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+			<!--Полоска-->
+			<div class="line"></div>
+			
+			<!--Фотогалерея-->
+			<a id="photo" class="anchor"></a>
+			<div>
+				<h2>Фотогалерея</h2>
+				<!--Фото 1-->
+				    
+				<div class="photo">
+				
+					<img src="photo1.jpg" alt="Фото 1"/>
+					
+					<h2>Коридор</h2>
+				</div>
+				   
+				<div class="photo">
+					<img src="photo2.jpg" alt="Фото 2"/>
+					
+				</div>
+				<div class="photo">
+					<img src="photo3.jpg" alt="Фото 3"/>
+					
+					<h2>Зал</h2>
+				</div><div class="photo">
+					<img src="photo4.jpg" alt="Фото 4"/>
+					
+				</div>
+				<!--Фото 2-->
+				<div class="photo">
+					<img src="photo5.jpg" alt="Фото 5"/>
+					
+					<h2>Кухня</h2>
+				</div>
+				
+				<!--Фото 3-->
+				<div class="photo">
+					<img src="photo6.jpg" alt="Фото 6"/>
+					
+				</div>
+				<!--Фото 4-->
+				<div class="photo">
+					<img src="photo7.jpg" alt="Фото 7"/>
+					
+					<h2>Комната</h2>
+				</div>
+				<!--Фото 5-->
+								<div class="photo">
+					<img src="photo8.jpg" alt="Фото 8"/>
+					
+				</div>
+								<div class="photo">
+					<img src="photo9.jpg" alt="Фото 9"/>
+					<h2>Ванная</h2>
+				</div>
+				<div class="photo">
+					<img src="photo10.jpg" alt="Фото 10"/>
+					
+				</div>
+				
+					
+				
+			</div>		
+			
+			<!--Полоска-->
+			<div class="line"></div>
+			
+			<!--Контакты-->
+			<a id="contact" class="anchor"></a>
+			<div>
+				<h2>Контакты для связи</h2>
+				<!--Таблица контактов-->
+				<table class="contacts" border="1" cellpadding="10" cellspacing="0" width="500">
+					<tr>
+						<td>Татьяна</td>
+						<td>+375 (29) 757-56-57</td>
+					</tr>
+					
+				</table>
+				<!--Карта гугл-->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2835.3634165691446!2d27.582927077911485!3d53.91283076522701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfa51c5fcb71%3A0x9baa8db422c16d25!2z0YPQuy4g0JfQvtC70L7RgtCw0Y8g0LPQvtGA0LrQsCAxNSwg0JzQuNC90YHQuiAyMjAwODk!5e0!3m2!1sru!2sby!4v1615106012904!5m2!1sru!2sby" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<!--Полоска-->
+			<div class="line"></div>
+			
+			<!--Подвал сайта-->
+			<div class="footer">
+				<img class="logo" src="logo.jpg" alt="Логотип" width="50" height="50" align="left"/>
+				<p>Тел: 8 (029) 7703344</p>		
+				<p>Сайт создан: Савич Ася</p>			
+				<p style="float: left">Квартиры на сутки Минск</p>
+			</div>	
+		</div>
+
+	</body>
+
+</html>

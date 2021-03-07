@@ -1,0 +1,175 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+h2{
+	text-align: center;
+	margin-top: 20;
+}
+
+h3{
+	text-align: center;
+	margin-top: 10;
+}
+
+div{
+	box-sizing: border-box;
+}
+
+/*Шапка сайта*/
+.header{
+	background: MidnightBlue;
+	position: fixed;
+	width: 100%;
+	height: 170;
+	border-bottom: 10px solid DarkSlateBlue;
+	min-width: 800;
+	z-index: 100;
+}
+
+.title{
+	position: absolute;
+	top: 25;
+	left: 10%;
+	min-width: 600;
+}
+
+.name{
+	color: white;
+	margin: 0 0 4 100;
+}
+
+.big{
+	font-size: 1.5em;
+}
+
+/*Меню*/
+.menu{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 10;
+	right: 5%;
+}
+
+.menu li{
+	display:inline-block;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	padding: 10 10 5;
+	transition: all .5s;
+}
+
+.menu li a:hover{
+	border-bottom: 5px solid DarkSlateBlue;
+	color: orange;
+}
+
+/*Контент*/
+.anchor{
+	position: relative;
+	bottom: 150;
+}
+
+.main{	
+	position: relative;
+	top: 170;
+	min-width: 800;
+}
+
+/*Приветствие*/
+.welcome img{
+	position: relative;
+	
+}
+
+.welcome p{
+	position: absolute;
+	top: 50;
+	left: 50;
+	border-radius: 10px;
+	width: 600;
+	padding: 20;
+	color: white;
+	background: MediumSlateBlue;
+	opacity: 100%;
+	font-size: 1.5em;
+	
+}
+
+/*Полоска*/
+.line{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: DarkSlateBlue;
+	clear: both;
+}
+
+/*О нас*/
+.box{
+	border: 5px solid DarkSlateBlue;
+	border-radius: 20px;
+	width: 25%;
+	min-width: 250;
+	height: 200;
+	float: left;
+	margin: 10 4% 50;
+	padding: 20;
+	color: white;
+}
+
+/*Фотогалерея*/
+.photo{
+	min-width: 400;
+	width: 25%;
+	height: 400;
+	width: 200;
+	float: left;
+	margin: 20 4%;
+}
+
+.photo img{
+	width: 100%;
+	height: 350;
+	border: 5px solid DarkSlateBlue;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.photo p{
+	text-align: center;
+}
+
+/*Контакты*/
+.contacts{
+	float: left;
+	margin: 10 4%;
+	width: 40%;
+	height: 390;
+	min-width: 400;
+	border: 5px solid DarkSlateBlue
+}
+
+/*Подвал сайта*/
+.footer{
+	background: black;
+	position: relative;
+	padding: 10 30;
+	width: 100%;
+	height: 70;
+	min-width: 800;
+	z-index: 100;
+}
+
+.footer p{
+	color: white;
+	float: right;
+	margin: 20 10;
+}
